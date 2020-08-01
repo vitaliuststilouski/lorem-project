@@ -1,0 +1,25 @@
+{
+  "name": "lorem-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass src/styles/main.scss public/styles/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitaliuststilouski/lorem-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitaliuststilouski/lorem-project/issues"
+  },
+  "homepage": "https://github.com/vitaliuststilouski/lorem-project#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  }
+}
