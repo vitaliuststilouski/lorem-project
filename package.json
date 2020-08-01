@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass src/styles/main.scss public/styles/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "build": "node-sass src/styles/main.scss public/styles/main.css",
+    "watch": "nodemon -e scss -x \"npm run build\""
   },
   "repository": {
     "type": "git",
