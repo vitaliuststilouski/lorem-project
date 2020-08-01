@@ -1,0 +1,90 @@
+.promo {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    flex-direction: row;
+    min-height: 849px;
+    background: url("./../img/discussion-pic.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.promo-wrapper {
+    margin-top: 230px;
+}
+
+.promo-title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.35;
+
+    .promo-title__stress {
+        color: $color-blue-1-1;
+    }
+}
+
+
+.promo-description {
+    margin-top: 56px;
+    font-size: 20px;
+    font-weight: 600;
+
+    .promo-list__item:before {
+        content: '-';
+        text-indent: -5px;
+    }
+
+    .promo-list__item {
+        font-weight: 400;
+        font-size: 20px;
+        padding-top: 15px;
+    }
+}
+
+.promo-buttons {
+    margin: 77px 0 0 9px;
+    
+    .order-button {
+        @include button-style;
+        margin-right: 25px;
+    }
+
+    .details-button {
+        @include button-style;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .promo {
+        .promo-wrapper {
+            padding: 25px 20px;
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .promo {
+        .promo-wrapper {
+            margin-top: 125px;
+            text-align: center;
+        }
+
+        .promo-title {
+            font-size: 34px;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .promo {
+        .promo-wrapper {
+            margin-top: 190px;
+        }
+
+        .order-button {
+            margin: 0 0 10px 0;
+        }
+    }
+}

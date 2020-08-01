@@ -1,0 +1,25 @@
+// @media (min-width: $desktop) {
+//     width: 1170px;
+// }
+
+@mixin button-style {
+    display: inline-block;
+    text-decoration: none;
+    max-width: 182px;
+    width: 100%;
+    padding: 13px 10px;
+    color: $color-black-1-2;
+    background-color: $color-white-1-1;
+    border-radius: 3px;
+    text-align: center;;
+    box-sizing: border-box;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 1px solid $color-black-1-2;
+
+    &:hover {
+        background: $color-blue-1-1;
+        color: $color-white-1-1;
+        border: 1px solid $color-white-1-1;
+    }
+}
