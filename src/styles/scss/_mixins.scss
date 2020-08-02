@@ -2,6 +2,12 @@
 //     width: 1170px;
 // }
 
+@mixin size {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 @mixin button-style {
     display: inline-block;
     text-decoration: none;
@@ -11,7 +17,7 @@
     color: $color-black-1-2;
     background-color: $color-white-1-1;
     border-radius: 3px;
-    text-align: center;;
+    text-align: center;
     box-sizing: border-box;
     font-size: 13px;
     text-transform: uppercase;
@@ -23,3 +29,4 @@
         border: 1px solid $color-white-1-1;
     }
 }
+

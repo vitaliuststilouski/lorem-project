@@ -1,0 +1,101 @@
+.order {
+    background-color: $color-black-1-4;
+}
+
+.order-wrapper {
+    @include size;
+    padding-bottom: 100px;
+}
+
+.order-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white-1-1;
+    font-size: 36px;
+    padding-top: 118px;
+    font-weight: 600;
+
+    .order-title__stress {
+        color: $color-blue-1-1;
+    }
+
+}
+
+.order-subtitle {
+    color: $color-grey-1-1;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.steps {
+    display: flex;
+    margin: 83px 0 0 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.steps-item {
+    min-height: 150px;
+    max-width: 160px;
+    position: relative;
+
+    &:not(:last-child)::after {
+        display: inline-block;
+        content: url('./../img/dots.png');
+        position: absolute;
+        top: 37px;
+        left: 154px;
+    }
+
+    &.steps-item__search {
+        background: url('./../img/search.png') no-repeat center top;
+    }
+
+    &.steps-item__percentage {
+        background: url('./../img/percentage.png') no-repeat center top;
+    }
+
+    &.steps-item__template {
+        background: url('./../img/template.png') no-repeat center top;
+    }
+
+    &.steps-item__envelope {
+        background: url('./../img/envelope.png') no-repeat center top;
+    }
+
+    &.steps-item__money {
+        background: url('./../img/money.png') no-repeat center top;
+    }
+
+    .steps-text {
+        text-align: center;
+        margin-top: 118px;
+        color: $color-white-1-1;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .steps-item {
+        &:not(:last-child)::after {
+            display: none;
+            content: url('./../img/dots-3.png');
+            left: calc(120% - 20px);
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .order-wrapper {
+        box-sizing: border-box;
+        padding: 10px 20px 20px;
+    }
+
+    .steps {
+        justify-content: space-around;
+
+        .steps-item {
+            margin: 20px 0;
+        }
+    }
+}

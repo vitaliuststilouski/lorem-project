@@ -1,14 +1,12 @@
 .promo {
     display: flex;
-    justify-content: center;
-    // align-items: center;
+    justify-content: flex-start;
     flex-direction: row;
     min-height: 849px;
     background: url("./../img/discussion-pic.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
 }
-
 
 .promo-wrapper {
     margin-top: 230px;
