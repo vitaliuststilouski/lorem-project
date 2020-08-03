@@ -76,9 +76,9 @@
                     <p class="steps-text">Excepteur sint occaecat cupidatat non proident</p>
                 </div>
             </div>
-            <div>
-                <form action="#">
-                    <div class="row-1">
+            <div class="form-wrapper">
+                <form action="#" class="form">
+                    <div class="form-fields">
                         <select name="options" id="selection">
                             <option value="0">Выберите тип системы</option>
                             <option value="1">Sed ut perspiciatis</option>
@@ -92,12 +92,22 @@
                             <option value="9">Temporibus autem</option>
                             <option value="10">Itaque earum rerum</option>
                         </select>
-                        <input type="text" id="firstname" name="firstname" placeholder="Ваш email">
+                        <input type="text" id="email" name="email" placeholder="Ваш email">
                         <input type="text" id="firstname" name="firstname" placeholder="Вашe имя">
                     </div>
-                    <div>
-                        <input type="range" id="volume" name="volume" min="0" max="100">
-                        <input type="file" id="file" name="file" value="Прикрепить файл">
+                    <div class="form-tools">
+                        <div class="range-tool">
+                            <label for="volume">Sed ut perspiciatis, unde omnis iste natus</label>
+                            <output name="output-percent" class="output-percent">75 %<span></span> </output>
+                            <input type="range" name="input-percent" class="input-percent" value="75" min="1" max="100"
+                                oninput="showRangeValue()"
+                            >
+
+                        </div>
+                        <label class="attach-file">
+                            <input type="file" id="file" name="file">
+                            <span class="attach-file__title">Прикрепить файл</span>
+                        </label>
                     </div>
                     <input type="submit" value="Отправить">
                 </form>
@@ -115,6 +125,7 @@
             <span class="footer-item footer-item__social-network__vk">Мы вконтакте</span>
         </div>
     </footer>
+    <script src="./js/rangeInput.js"></script>
 </body>
 
 </html>
