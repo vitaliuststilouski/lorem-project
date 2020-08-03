@@ -76,6 +76,9 @@
 }
 
 @media all and (max-width: 1200px) {
+    .order-wrapper {
+        padding-bottom: 25px;
+    }
     .steps-item {
         &:not(:last-child)::after {
             display: none;

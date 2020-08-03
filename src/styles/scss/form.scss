@@ -1,0 +1,115 @@
+select[name="options"],
+input[name="email"],
+input[name="firstname"] {
+    max-width: 370px;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: $color-grey-1-3;
+}
+
+.form {
+    margin-top: 62px;
+
+    .form-fields {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .form-tools {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 30px;
+
+        .range-tool {
+            max-width: 768px;
+            width: 100%;
+            margin-right: 10px;
+        }
+
+        output[name="output-percent"] {
+            color: $color-white-1-1;
+            float: right;
+        }
+
+        input[name="input-percent"] {
+            margin-top: 28px;
+        }
+    }
+
+    label[for="volume"] {
+        color: $color-white-1-1;
+    }
+
+    input[name="file"] {
+        display: none;
+    }
+
+    .attach-file {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 370px;
+        padding: 15px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: $color-white-1-1;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+
+        .attach-file__title::before {
+            content: url("./../img/file.png");
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+
+    input[type="submit"] {
+        display: block;
+        max-width: 370px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 15px 20px;
+        background: $color-blue-1-1;
+        color: $color-white-1-1;
+        border: 1px solid $color-white-1-1;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+}
+
+@media all and (max-width: 1200px) {
+
+    .form {
+        .form-fields {
+            justify-content: center;
+
+            select[name="options"],
+            input[name="email"],
+            input[name="firstname"] {
+                max-width: 600px;
+            }
+        }
+
+        .form-tools {
+            justify-content: center;
+
+            .range-tool {
+                max-width: 900px;
+            }
+
+            .attach-file {
+                margin-top: 40px;
+            }
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+        }
+    }
+}
